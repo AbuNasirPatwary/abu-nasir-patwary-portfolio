@@ -787,3 +787,14 @@ strong {
 .university-logo-link:hover {
   transform: translateY(-3px);
 }
+
+.highlight {
+  font-weight: 700;
+  color: #4ee3b5;
+  /* you can change this if you want */
+}
+
+.tech-highlight {
+  font-weight: 700;
+  color: #60a5fa;
+}
