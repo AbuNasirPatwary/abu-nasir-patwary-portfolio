@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Selected software projects by Abu Nasir Patwary.">
+  <meta name="description" content="Full-stack software projects by Abu Nasir Patwary, including Khabo-Koi and CampusLink.">
   <meta name="theme-color" content="#1c1e20">
   <title>Projects | Abu Nasir Patwary</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
       <a class="back-home" href="index.html">← Home</a>
       <span class="page-kicker">Selected work</span>
       <h1>Projects</h1>
-      <p class="page-lead">A selection of collaborative software projects focused on practical services, connected communities, and full-stack application development.</p>
+      <p class="page-lead">Full-stack applications built to solve practical problems, connect communities, and support real users.</p>
       <nav class="page-nav" aria-label="Main navigation">
         <a href="research.html">Research</a>
         <a href="projects.html" aria-current="page">Projects</a>
@@ -25,7 +25,7 @@
       </nav>
     </header>
 
-    <section class="project-list">
+    <section class="project-list" aria-label="Featured projects">
       <article class="project-item">
         <div class="project-heading">
           <div>
@@ -33,16 +33,27 @@
             <h2>Khabo-Koi</h2>
             <p class="project-subtitle">Restaurant Discovery &amp; Table Reservation Platform</p>
           </div>
-          <span class="project-index">01</span>
         </div>
-        <p class="item-summary">A restaurant discovery and reservation platform designed to help users explore restaurants, browse menus, check table availability, and manage dining reservations.</p>
+        <p class="item-summary">
+          A platform for <strong>customers</strong> to discover and book restaurants, <strong>restaurant and branch managers</strong> to oversee dining operations, and <strong>platform administrators</strong> to manage the service.
+          <strong>React.js and Tailwind CSS</strong> deliver the interface, <strong>Django REST Framework</strong> handles APIs and booking logic, and <strong>PostgreSQL</strong> stores application data.
+        </p>
         <ul class="feature-list">
-          <li>Combines restaurant discovery, branch and menu information, table reservations, and food preordering.</li>
-          <li>Includes an AI dining assistant, role-based management dashboards, and operational analytics. The advance-payment flow is simulated.</li>
+          <li><strong>Restaurant discovery:</strong> Customers explore restaurants, branches, menus, and table availability before booking.</li>
+          <li><strong>Reservations and ordering:</strong> Transaction-safe table reservations, food pre-orders, and a simulated advance-payment workflow.</li>
+          <li><strong>AI and management:</strong> An AI dining assistant and <strong>four role-based dashboards</strong> for customers, restaurant managers, branch managers, and platform administrators.</li>
+          <li><strong>Technical scale:</strong> <strong>51 REST API routes</strong> and <strong>192 automated backend test methods</strong>.</li>
         </ul>
         <div class="stack-block">
           <span class="stack-label">Technology stack</span>
-          <div class="tag-row"><span>React.js</span><span>Vite</span><span>Tailwind CSS</span><span>Python</span><span>Django</span><span>Django REST Framework</span><span>PostgreSQL</span></div>
+          <div class="tag-row" aria-label="Khabo-Koi technologies">
+            <span>React.js</span><span>Vite</span><span>Tailwind CSS</span><span>Python</span><span>Django</span><span>Django REST Framework</span><span>PostgreSQL</span>
+          </div>
+        </div>
+        <div class="project-links" aria-label="Khabo-Koi links">
+          <a href="https://khabo-koi.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+          <a href="https://github.com/AbuNasirPatwary/Khabo-Koi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="khabo-koi-details.html">Project Details →</a>
         </div>
       </article>
 
@@ -53,16 +64,27 @@
             <h2>CampusLink</h2>
             <p class="project-subtitle">University Community Management Platform</p>
           </div>
-          <span class="project-index">02</span>
         </div>
-        <p class="item-summary">A centralized platform connecting students, alumni, and administrators through a collection of campus-focused services and community features.</p>
+        <p class="item-summary">
+          A campus platform where <strong>students and alumni</strong> share resources, participate in campus activities, and connect with their community, while <strong>administrators</strong> review accounts and moderate content.
+          <strong>React.js and Tailwind CSS</strong> power the interface, <strong>Spring Boot</strong> provides APIs and business logic, and <strong>PostgreSQL</strong> stores application data.
+        </p>
         <ul class="feature-list">
-          <li>Integrates lost-and-found management, borrowing requests, a campus complaint board, and talent sharing.</li>
-          <li>Supports role-based access, alumni verification, notifications, and administrative content moderation.</li>
+          <li><strong>Four community modules:</strong> FindIt (lost and found), BorrowHub (borrowing requests), Campus Complaints, and Talent Sharing.</li>
+          <li><strong>Community interaction:</strong> Students and alumni create posts and requests, comment, react, and receive notifications.</li>
+          <li><strong>Administration and security:</strong> JWT authentication, role-based access, alumni verification, and content moderation.</li>
+          <li><strong>Technical scale:</strong> <strong>62 HTTP handlers</strong>, <strong>15 JPA entities</strong>, and asynchronous activity logging.</li>
         </ul>
         <div class="stack-block">
           <span class="stack-label">Technology stack</span>
-          <div class="tag-row"><span>React.js</span><span>Vite</span><span>Tailwind CSS</span><span>Spring Boot</span><span>REST APIs</span><span>PostgreSQL</span></div>
+          <div class="tag-row" aria-label="CampusLink technologies">
+            <span>React.js</span><span>Vite</span><span>Tailwind CSS</span><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>PostgreSQL</span>
+          </div>
+        </div>
+        <div class="project-links" aria-label="CampusLink links">
+          <a href="https://campus-link-delta-two.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+          <a href="https://github.com/AbuNasirPatwary/CampusLink" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="campuslink-details.html">Project Details →</a>
         </div>
       </article>
     </section>

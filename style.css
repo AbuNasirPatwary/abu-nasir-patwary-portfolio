@@ -798,3 +798,222 @@ strong {
   font-weight: 700;
   color: #60a5fa;
 }
+/* Projects page: recruiter-friendly typography and links.
+   Scoped to project-list so research and home page styling remain unchanged. */
+.project-list .project-item {
+  padding: 34px 0 38px;
+}
+
+.project-list .project-heading h2 {
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.project-list .page-kicker {
+  font-size: 12px;
+}
+
+.project-list .project-subtitle {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 3px 0 13px;
+}
+
+.project-list .item-summary,
+.project-list .feature-list {
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.project-list .item-summary {
+  margin-bottom: 14px;
+}
+
+.project-list .feature-list {
+  padding-left: 24px;
+  margin-top: 0;
+}
+
+.project-list .feature-list li {
+  padding-left: 3px;
+  margin: 8px 0;
+}
+
+.project-list .stack-block {
+  margin-top: 24px;
+}
+
+.project-list .stack-label {
+  color: #e0e3e4;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project-list .tag-row {
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.project-list .tag-row span {
+  color: #75b7ff;
+  background: rgba(96, 165, 250, .11);
+  border: 1px solid rgba(96, 165, 250, .32);
+  border-radius: 5px;
+  padding: 6px 11px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project-list .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.project-list .project-links a {
+  display: inline-flex;
+  align-items: center;
+  color: #e0e6e6;
+  background: #292f32;
+  border: 1px solid #3c4548;
+  border-radius: 7px;
+  padding: 9px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color .2s, border-color .2s, background .2s;
+}
+
+.project-list .project-links a:hover,
+.project-list .project-links a:focus-visible {
+  color: var(--accent);
+  background: #2a3434;
+  border-color: var(--accent);
+}
+
+.project-list .project-links a:last-child {
+  color: #75b7ff;
+  border-color: rgba(96, 165, 250, .38);
+}
+
+.project-list .project-links a:last-child:hover,
+.project-list .project-links a:last-child:focus-visible {
+  background: rgba(96, 165, 250, .13);
+  border-color: #75b7ff;
+}
+
+@media (max-width: 520px) {
+  .project-list .project-heading h2 {
+    font-size: 25px;
+  }
+
+  .project-list .item-summary,
+  .project-list .feature-list {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .project-list .tag-row span {
+    font-size: 13px;
+  }
+
+  .project-list .project-links a {
+    font-size: 13px;
+  }
+}
+
+/* Research page refinements only — preserves Projects and homepage styling */
+.research-page .page-lead {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.research-page .research-list {
+  padding-top: 13px;
+}
+
+.research-page .research-item {
+  padding: 34px 0 38px;
+}
+
+.research-page .research-item .item-meta {
+  font-size: 13px;
+  gap: 13px;
+  margin-bottom: 13px;
+}
+
+.research-page .research-item .status {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.research-page .research-item h2 {
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.48;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.research-page .research-item .item-summary {
+  font-size: 16px;
+  line-height: 1.85;
+  margin: 0 0 12px;
+}
+
+.research-page .research-item .item-note {
+  color: #aeb8b9;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.research-page .research-item .research-metric {
+  color: #eef2f3;
+  font-weight: 700;
+}
+
+.research-page .research-item .tag-row {
+  gap: 10px;
+  margin-top: 19px;
+}
+
+.research-page .research-item .tag-row span {
+  color: #65e8bb;
+  background: rgba(53, 201, 149, 0.11);
+  border: 1px solid rgba(53, 201, 149, 0.34);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+@media (max-width: 520px) {
+  .research-page .page-lead {
+    font-size: 15px;
+  }
+
+  .research-page .research-item {
+    padding: 27px 0 31px;
+  }
+
+  .research-page .research-item h2 {
+    font-size: 19px;
+  }
+
+  .research-page .research-item .item-summary {
+    font-size: 15px;
+  }
+
+  .research-page .research-item .item-note {
+    font-size: 14px;
+  }
+
+  .research-page .research-item .tag-row span {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}

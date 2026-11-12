@@ -10,8 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="research.css">
 </head>
-<body>
+<body class="research-page">
   <main class="content-shell">
     <header class="page-header">
       <a class="back-home" href="index.html">← Home</a>
@@ -29,31 +30,32 @@
       <article class="research-item">
         <div class="item-meta"><span class="status submitted">Submitted</span><span>2026</span></div>
         <h2>Workload-Based Energy Efficiency Analysis of Native and Virtualized Operating Systems for Sustainable Computing: An Experimental Study on Modern Computing Platforms</h2>
-        <p class="item-summary">An experimental comparison of native macOS with Windows and Ubuntu Linux virtual machines on Apple M3 hardware. Four workloads—idle operation, Python execution, video playback, and web browsing—were evaluated using repeated energy measurements and statistical analysis.</p>
-        <p class="item-note">Submitted to the IEEE Computer Society Bangladesh Chapter Symposium 2026.</p>
+        <p class="item-summary">Compared native macOS with Windows 11 ARM and Ubuntu 24.04 ARM virtual machines on Apple M3 hardware across <strong class="research-metric">four workloads</strong>: idle operation, Python execution, video playback, and web browsing. Each workload was evaluated in <strong class="research-metric">five 600-second runs</strong> using EnergiBridge measurements and statistical analysis.</p>
+        <p class="item-note"><strong class="research-metric">Key finding:</strong> Efficiency varied by workload, with macOS performing best in video and web tasks and the Windows VM showing an advantage in idle and Python tasks. Submitted to the IEEE Computer Society Bangladesh Chapter Symposium 2026.</p>
         <div class="tag-row"><span>Energy efficiency</span><span>Virtualization</span><span>Experimental evaluation</span><span>Sustainable computing</span></div>
       </article>
 
       <article class="research-item">
         <div class="item-meta"><span class="status preparation">Manuscript in Preparation</span><span>Undergraduate thesis</span></div>
         <h2>Colorism in Vision-Language Models: A Bangladeshi Study of Skin-Tone and Gender Bias in VLMs</h2>
-        <p class="item-summary">A Bangladesh-focused evaluation of skin-tone and gender-related bias in vision-language models. The study examines model outputs across controlled synthetic identity and socioeconomic scenarios to investigate whether demographic cues influence generated descriptions and decisions.</p>
+        <p class="item-summary">Evaluated <strong class="research-metric">four vision-language models</strong> for skin-tone and gender bias using <strong class="research-metric">100 synthetic Bangladeshi facial images</strong> (50 identity pairs), <strong class="research-metric">1,200 socioeconomic profiles</strong>, and <strong class="research-metric">4,000 simulated recruitment decisions</strong>.</p>
+        <p class="item-note"><strong class="research-metric">Key findings:</strong> Gemini's light-skin profiles received BDT 8,877 higher estimated income (p &lt; 0.001); light-skin selection rates were 66.87% (Gemini), 66.35% (GPT), and 59.76% (DeepSeek). Llama showed candidate-position confounding across 1,000 fixed-seed trials.</p>
         <div class="tag-row"><span>Vision-language models</span><span>AI fairness</span><span>Bias evaluation</span><span>Responsible AI</span></div>
       </article>
 
       <article class="research-item">
         <div class="item-meta"><span class="status preparation">Manuscript in Preparation</span></div>
         <h2>Robustness and Enhancement Recovery of CNN and Vision Transformer Models for Rice Leaf Disease Classification Under Controlled Image Degradation</h2>
-        <p class="item-summary">A comparative study of MobileNetV3-Small and DeiT-Tiny for seven-class rice leaf disease classification under controlled noise, blur, and low-light conditions. It evaluates gamma correction, CLAHE, and unsharp masking using classification and image-quality metrics.</p>
-        <p class="item-note">The experiments show that improved image quality does not necessarily translate into better downstream classification performance.</p>
+        <p class="item-summary">Benchmarked <strong class="research-metric">MobileNetV3-Small (71.08% accuracy)</strong> and <strong class="research-metric">DeiT-Tiny (74.51% accuracy)</strong> for seven-class rice leaf disease classification under controlled noise, blur, and low-light degradation.</p>
+        <p class="item-note"><strong class="research-metric">Key finding:</strong> Gamma correction improved MobileNetV3-Small accuracy by <strong class="research-metric">8.33 percentage points</strong> under low light. Evaluation used accuracy, macro-F1, PSNR, and SSIM; better visual quality did not consistently improve classification.</p>
         <div class="tag-row"><span>Computer vision</span><span>CNN</span><span>Vision Transformer</span><span>Agricultural AI</span></div>
       </article>
 
       <article class="research-item">
         <div class="item-meta"><span class="status preparation">Manuscript in Preparation</span></div>
         <h2>Empirical Evaluation of Living-off-the-Land (LotL) Attack Techniques and Security Control Limitations in Modern Operating Systems</h2>
-        <p class="item-summary">A cross-platform study of Living-off-the-Land activity on Windows and macOS. The research develops and evaluates two rule-based detection approaches using native-tool activity and contextual features such as execution sequences, timing, process relationships, network activity, and persistence behavior.</p>
-        <p class="item-note">The preliminary evaluation uses a catalog of 40 techniques and 200 constructed run-level traces.</p>
+        <p class="item-summary">A cross-platform study of Living-off-the-Land (LotL) activity on Windows and macOS, developing and evaluating <strong class="research-metric">two rule-based detection approaches</strong> using native-tool activity and context such as execution sequences, timing, process relationships, network activity, and persistence behavior.</p>
+        <p class="item-note"><strong class="research-metric">Evaluation scope:</strong> A catalog of <strong class="research-metric">40 techniques</strong> and <strong class="research-metric">200 synthetically constructed traces</strong>.</p>
         <div class="tag-row"><span>Cybersecurity</span><span>Living-off-the-Land</span><span>Rule-based detection</span><span>Windows &amp; macOS</span></div>
       </article>
     </section>
